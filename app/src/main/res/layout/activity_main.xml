@@ -9,14 +9,36 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/idEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/idEmail"
-        android:hint="Insira seu e-mail">
+        android:hint="Insira seu e-mail"
+        app:endIconMode="clear_text"
+        app:startIconContentDescription="Insira seu email"
+
+        app:startIconDrawable="@drawable/baseline_email">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/idSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insira sua senha"
+        app:endIconMode="password_toggle"
+        app:startIconContentDescription="Insira seu senha"
+
+        app:startIconDrawable="@drawable/baseline_email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
